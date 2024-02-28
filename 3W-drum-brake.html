@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <g clip-path="url(#clip0_1464_1204)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M20.001 0C31.046 0 40.002 8.95377 40.002 20.001C40.002 23.8149 38.9326 27.3787 37.0806 30.4122H2.92135C1.06936 27.3787 0 23.8149 0 20.001C0 8.95592 8.95377 0 20.001 0ZM36.671 31.0547C36.5265 31.2724 36.3778 31.4859 36.2247 31.6993H3.77943C3.62635 31.488 3.47759 31.2724 3.33314 31.0547H36.671ZM35.7418 32.3418C32.0809 37.0052 26.3913 39.9998 20.0031 39.9998C13.615 39.9998 7.92537 37.0052 4.26452 32.3418H35.7439H35.7418Z"
+                        fill="#E31E24" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.7693 8.39319C24.8693 8.39319 31.4364 14.9603 31.4364 23.0603C31.4364 31.1603 24.8693 37.7274 16.7693 37.7274C8.66927 37.7274 2.10217 31.1603 2.10217 23.0603C2.10217 14.9603 8.66927 8.39319 16.7693 8.39319Z"
+                        fill="#FEFEFE" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.97603 28.9742L6.85389 17.1444H9.41734L7.5438 28.9742H4.97388H4.97603ZM12.412 29.1661C11.2801 29.1661 9.98005 28.9419 8.98184 28.3727L8.59592 28.1528L9.53377 25.9278L10.034 26.2577C10.2151 26.3784 10.6096 26.5078 10.8166 26.5703C11.3189 26.7212 11.8536 26.8139 12.3775 26.8139C12.9812 26.8139 13.891 26.7277 14.2661 26.1736C14.4192 25.9472 14.4666 25.6734 14.4666 25.4039C14.4666 24.8822 14.1001 24.5933 13.6646 24.3712C13.4059 24.2375 13.1299 24.1254 12.8626 24.009C12.537 23.8688 12.2136 23.7265 11.9032 23.5584C10.7713 22.9482 10.021 22.0923 10.021 20.7362C10.021 20.001 10.2151 19.296 10.6376 18.6902C11.5216 17.4182 13.1105 16.9503 14.5938 16.9503C15.4821 16.9503 16.517 17.112 17.3556 17.3944L17.7588 17.5303L17.3707 19.8889L16.8016 19.6776C16.0879 19.4103 15.2708 19.2443 14.5076 19.2443C13.9815 19.2443 13.3477 19.337 12.9424 19.7057C12.716 19.9126 12.5802 20.1972 12.5802 20.5055C12.5802 20.6133 12.5974 20.7168 12.6448 20.816C12.8669 21.2709 13.9061 21.6719 14.3481 21.8573C15.9047 22.5214 17.1336 23.3342 17.1336 25.184C17.1336 26.0938 16.89 26.9648 16.2992 27.6698C15.3527 28.8017 13.8242 29.1639 12.4098 29.1639L12.412 29.1661ZM21.5469 20.7362L25.2012 17.1444H28.5624L22.8685 22.7132C24.3453 24.2785 25.6669 26.3633 26.5638 28.2627L26.9001 28.9742H23.9529L23.8128 28.7069C23.1358 27.4111 22.3791 26.1693 21.4606 25.0266C21.3011 24.8239 21.1372 24.6234 20.9691 24.4251L20.2339 28.9742H17.6661L19.544 17.1444H22.1053L21.5469 20.7362Z"
+                        fill="#2B2A29" />
+                    <path
+                        d="M34.3059 13.2549C34.666 13.2549 35.0131 13.3454 35.3451 13.5265C35.6771 13.7076 35.938 13.9664 36.1277 14.3027C36.3175 14.639 36.4123 14.9926 36.4123 15.3613C36.4123 15.7278 36.3196 16.0771 36.1342 16.4091C35.9466 16.7411 35.6879 16.9998 35.3559 17.1874C35.0239 17.3728 34.6746 17.4655 34.3081 17.4655C33.9416 17.4655 33.5923 17.3728 33.2603 17.1874C32.9283 16.9998 32.6695 16.7411 32.482 16.4091C32.2966 16.0771 32.2039 15.7278 32.2039 15.3613C32.2039 14.9926 32.2987 14.639 32.4884 14.3027C32.6782 13.9664 32.939 13.7076 33.2711 13.5265C33.6031 13.3454 33.948 13.2549 34.3102 13.2549H34.3059ZM34.3081 13.671C34.0192 13.671 33.7411 13.7443 33.4759 13.8866C33.2107 14.031 33.0016 14.238 32.8485 14.5097C32.6954 14.7792 32.6178 15.0637 32.6178 15.3591C32.6178 15.6545 32.6933 15.9348 32.842 16.2021C32.9908 16.4694 33.1999 16.6786 33.4673 16.8273C33.7346 16.9783 34.0149 17.0516 34.3081 17.0516C34.6035 17.0516 34.8837 16.9761 35.1489 16.8273C35.4163 16.6764 35.6232 16.4694 35.7742 16.2021C35.9251 15.9369 36.0005 15.6545 36.0005 15.3591C36.0005 15.0637 35.9229 14.7792 35.7698 14.5097C35.6168 14.238 35.4076 14.031 35.1425 13.8866C34.8751 13.7421 34.597 13.671 34.3081 13.671ZM33.3552 16.4845V14.2574H33.8079C34.2326 14.2574 34.4698 14.2596 34.5215 14.2639C34.6724 14.2768 34.7867 14.307 34.8708 14.3523C34.9527 14.3975 35.0239 14.4687 35.0799 14.5657C35.136 14.6606 35.164 14.7684 35.164 14.8848C35.164 15.0465 35.1123 15.1823 35.0066 15.2966C34.901 15.4109 34.7544 15.482 34.5647 15.51C34.6315 15.5359 34.6854 15.5639 34.722 15.5941C34.7587 15.6243 34.8083 15.6804 34.873 15.7644C34.8902 15.786 34.9441 15.8765 35.039 16.0361L35.2998 16.4845H34.7371L34.5517 16.1223C34.4267 15.8787 34.3232 15.7256 34.2434 15.6631C34.1615 15.6006 34.058 15.5682 33.9308 15.5682H33.8144V16.4845H33.3595H33.3552ZM33.8101 15.2125H33.9933C34.2542 15.2125 34.4159 15.2017 34.4784 15.1823C34.5409 15.1629 34.5905 15.1284 34.6272 15.0788C34.6638 15.0293 34.6811 14.9732 34.6811 14.9085C34.6811 14.8481 34.6638 14.7921 34.6272 14.7447C34.5905 14.6972 34.5409 14.6627 34.4741 14.6412C34.4094 14.6196 34.2477 14.611 33.9912 14.611H33.8079V15.2125H33.8101Z"
+                        fill="#FEFEFE" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1464_1204">
+                        <rect width="40" height="39.9998" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <span>Auto Industries</span>
+        </div>
+    
+        <div class="nav-link">
+            <div class="product border">
+                <p class="nav-border">Products</p>
+                <div class="dropdown">
+                    <div class="product-dropdown">
+                        <div class="main-options">
+                            <div class="two-wheeler options main-selectors" id="twoWheeler">
+                                <p>Two Wheeler</p>
+                            </div>
+                            <div class="three-wheeler main-selectors" id="threeWheeler">
+                                <p>Three Wheeler</p>
+                            </div>
+                        </div>
+                        <div class="sub-options">
+                            <div class="two-content" id="two-wheel-content">
+                                <div class="two-content-container">
+                                    <div class="sub-options-heading">
+                                        <span class="sub-options-heading-main">Two Wheeler</span>
+                                        <span class="sub-options-heading-sub">Lorem ipsum dolor sit amet consectetur. Vitae
+                                            pulvinar
+                                            vel sit turpis nunc. Magna vitae lorem mi elementum
+                                            nullam.</span>
+                                    </div>
+                                    <div>
+                                        <div class="sets">
+                                            <div class="sets-heading">
+                                                <a href="./2W-steering.html" class="sets-text">Steering Column Bearing
+                                                    (cone-sets)</a>
+                                                <div class="sets-icon">
+                                                    <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6"
+                                                        height="10" viewBox="0 0 6 10" fill="none">
+                                                        <path
+                                                            d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                            fill="#677890" />
+                                                    </svg>
+                                                    <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                        height="20" viewBox="0 0 24 24" fill="none">
+                                                        <path
+                                                            d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                            fill="#292929" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="sets-heading">
+                                            </div>
+                                            <div class="sets-heading">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div class="three-content" id="three-wheel-content">
+                                <div class="three-content-container">
+                                    <div class="sub-options-heading">
+                                        <span class="sub-options-heading-main">Three Wheeler</span>
+                                        <span class="sub-options-heading-sub">Lorem ipsum dolor sit amet consectetur. Vitae
+                                            pulvinar
+                                            vel sit turpis nunc. Magna vitae lorem mi elementum
+                                            nullam.</span>
+                                    </div>
+                                    <div class="three-content-text">
+                                        <div class="sets">
+                                            <div class="threeWheeler-sets">
+                                                <p>Brakes</p>
+                                                <div class="sets-heading">
+                                                    <a href="./3W-drum-brake.html" class="sets-text">Drum Brake Assembly</a>
+                                                    <div class="sets-icon">
+                                                        <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6"
+                                                            height="10" viewBox="0 0 6 10" fill="none">
+                                                            <path
+                                                                d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                                fill="#677890" />
+                                                        </svg>
+                                                        <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg"
+                                                            width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <path
+                                                                d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                                fill="#292929" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="threeWheeler-sets">
+                                                <p>Axles</p>
+                                                <div class="sets-heading">
+                                                    <a href="#" class="sets-text">2nd Generation Front <br>and Rear</a>
+                                                    <div class="sets-icon">
+                                                        <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6"
+                                                            height="10" viewBox="0 0 6 10" fill="none">
+                                                            <path
+                                                                d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                                fill="#677890" />
+                                                        </svg>
+                                                        <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg"
+                                                            width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <path
+                                                                d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                                fill="#292929" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="sets-heading">
+                                                    <a href="#" class="sets-text">3rd Generation Rear</a>
+                                                    <div class="sets-icon">
+                                                        <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6"
+                                                            height="10" viewBox="0 0 6 10" fill="none">
+                                                            <path
+                                                                d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                                fill="#677890" />
+                                                        </svg>
+                                                        <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg"
+                                                            width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <path
+                                                                d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                                fill="#292929" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="threeWheeler-sets">
+                                                <p>Drive Shaft assembly</p>
+                                                <div class="sets-heading">
+                                                    <a href="#" class="sets-text">Tri-Pod Shaft</a>
+                                                    <div class="sets-icon">
+                                                        <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6"
+                                                            height="10" viewBox="0 0 6 10" fill="none">
+                                                            <path
+                                                                d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                                fill="#677890" />
+                                                        </svg>
+                                                        <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg"
+                                                            width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <path
+                                                                d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                                fill="#292929" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="sets-heading">
+                                                    <a href="#" class="sets-text">Two-Pod Shaft</a>
+                                                    <div class="sets-icon">
+                                                        <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6"
+                                                            height="10" viewBox="0 0 6 10" fill="none">
+                                                            <path
+                                                                d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                                fill="#677890" />
+                                                        </svg>
+                                                        <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg"
+                                                            width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <path
+                                                                d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                                fill="#292929" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="sets-heading">
+                                                    <a href="#" class="sets-text">Two-Pod Shaft (slider pin)</a>
+                                                    <div class="sets-icon">
+                                                        <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6"
+                                                            height="10" viewBox="0 0 6 10" fill="none">
+                                                            <path
+                                                                d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                                fill="#677890" />
+                                                        </svg>
+                                                        <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg"
+                                                            width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                                            <path
+                                                                d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                                fill="#292929" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sets">
+                                            <div class="sets-heading">
+                                                <a href="#" class="sets-text">Ball Bearings</a>
+                                                <div class="sets-icon">
+                                                    <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6"
+                                                        height="10" viewBox="0 0 6 10" fill="none">
+                                                        <path
+                                                            d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                            fill="#677890" />
+                                                    </svg>
+                                                    <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                        height="20" viewBox="0 0 24 24" fill="none">
+                                                        <path
+                                                            d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                            fill="#292929" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="sets-heading">
+                                                <a href="./3W-trailer-arms.html" class="sets-text">Trailer Arm</a>
+                                                <div class="sets-icon">
+                                                    <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6"
+                                                        height="10" viewBox="0 0 6 10" fill="none">
+                                                        <path
+                                                            d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                            fill="#677890" />
+                                                    </svg>
+                                                    <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                        height="20" viewBox="0 0 24 24" fill="none">
+                                                        <path
+                                                            d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                            fill="#292929" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="sets-heading">
+                                                <a href="./3W-steering.html" class="sets-text">Steering Column <br> Bearing
+                                                    (cone-sets)</a>
+                                                <div class="sets-icon">
+                                                    <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6"
+                                                        height="10" viewBox="0 0 6 10" fill="none">
+                                                        <path
+                                                            d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                            fill="#677890" />
+                                                    </svg>
+                                                    <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                        height="20" viewBox="0 0 24 24" fill="none">
+                                                        <path
+                                                            d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                            fill="#292929" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sets">
+                                            <div class="sets-heading">
+                                                <a href="#" class="sets-text">Rubber & <br> Plastic Components</a>
+                                                <div class="sets-icon">
+                                                    <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6"
+                                                        height="10" viewBox="0 0 6 10" fill="none">
+                                                        <path
+                                                            d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                            fill="#677890" />
+                                                    </svg>
+                                                    <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                        height="20" viewBox="0 0 24 24" fill="none">
+                                                        <path
+                                                            d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                            fill="#292929" />
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="sets-heading">
+                                            </div>
+                                            <div class="sets-heading">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="resource border">
+                <p class="nav-border">Resources</p>
+                <div class="dropdown">
+                    <div class="about-us">
+                        <div class="about-us-main">
+                            <div class="categories">
+                                <div class="sets">
+                                    <div class="sets-heading">
+                                        <a href="#" class="sets-text">Downloads</a>
+                                        <div class="sets-icon">
+                                            <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="10"
+                                                viewBox="0 0 6 10" fill="none">
+                                                <path
+                                                    d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                    fill="#677890" />
+                                            </svg>
+                                            <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                    fill="#292929" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sets-heading">
+                                        <a href="#" class="sets-text">Quality Assurance</a>
+                                        <div class="sets-icon">
+                                            <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="10"
+                                                viewBox="0 0 6 10" fill="none">
+                                                <path
+                                                    d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                    fill="#677890" />
+                                            </svg>
+                                            <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                    fill="#292929" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sets-heading">
+                                        <a href="#" class="sets-text">Videos</a>
+                                        <div class="sets-icon">
+                                            <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="10"
+                                                viewBox="0 0 6 10" fill="none">
+                                                <path
+                                                    d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                    fill="#677890" />
+                                            </svg>
+                                            <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                    fill="#292929" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sets">
+                                    <div class="sets-heading">
+                                        <a href="#" class="sets-text">ISO Certificates</a>
+                                        <div class="sets-icon">
+                                            <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="10"
+                                                viewBox="0 0 6 10" fill="none">
+                                                <path
+                                                    d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                    fill="#677890" />
+                                            </svg>
+                                            <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                    fill="#292929" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="aboutus border">
+                <p class="nav-border">About us</p>
+                <div class="dropdown">
+                    <div class="about-us">
+                        <div class="about-us-main">
+                            <div class="categories">
+                                <div class="sets">
+                                    <div class="sets-heading">
+                                        <a href="#" class="sets-text">Company profile</a>
+                                        <div class="sets-icon">
+                                            <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="10"
+                                                viewBox="0 0 6 10" fill="none">
+                                                <path
+                                                    d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                    fill="#677890" />
+                                            </svg>
+                                            <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                    fill="#292929" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sets-heading">
+                                        <a href="#" class="sets-text">Mission & Vision</a>
+                                        <div class="sets-icon">
+                                            <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="10"
+                                                viewBox="0 0 6 10" fill="none">
+                                                <path
+                                                    d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                    fill="#677890" />
+                                            </svg>
+                                            <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                    fill="#292929" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sets-heading">
+                                        <a href="#" class="sets-text">R & D</a>
+                                        <div class="sets-icon">
+                                            <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="10"
+                                                viewBox="0 0 6 10" fill="none">
+                                                <path
+                                                    d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                    fill="#677890" />
+                                            </svg>
+                                            <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                    fill="#292929" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sets">
+                                    <div class="sets-heading">
+                                        <a href="#" class="sets-text">Management</a>
+                                        <div class="sets-icon">
+                                            <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="10"
+                                                viewBox="0 0 6 10" fill="none">
+                                                <path
+                                                    d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                    fill="#677890" />
+                                            </svg>
+                                            <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                    fill="#292929" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sets-heading">
+                                        <a href="#" class="sets-text">Infrastructure </a>
+                                        <div class="sets-icon">
+                                            <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="10"
+                                                viewBox="0 0 6 10" fill="none">
+                                                <path
+                                                    d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                    fill="#677890" />
+                                            </svg>
+                                            <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                    fill="#292929" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="sets-heading">
+                                        <a href="#" class="sets-text">Achievements</a>
+                                        <div class="sets-icon">
+                                            <svg class="half-arrow" xmlns="http://www.w3.org/2000/svg" width="6" height="10"
+                                                viewBox="0 0 6 10" fill="none">
+                                                <path
+                                                    d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                                                    fill="#677890" />
+                                            </svg>
+                                            <svg class="full-arrow" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M17.414 10.5859L13.121 6.29294L11.707 7.70694L15 10.9999H5V12.9999H15L11.707 16.2929L13.121 17.7069L17.414 13.4139C17.7889 13.0389 17.9996 12.5303 17.9996 11.9999C17.9996 11.4696 17.7889 10.961 17.414 10.5859Z"
+                                                    fill="#292929" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="contact-button">
+            <a href="./contact.html">Contact Us<svg xmlns="http://www.w3.org/2000/svg" width="8" height="14"
+                    viewBox="0 0 8 14" fill="none">
+                    <path
+                        d="M1.81139 13.707L0.400391 12.293L5.68938 6.99997L0.400391 1.70697L1.81539 0.292969L7.10038 5.58597C7.47532 5.96102 7.68595 6.46964 7.68595 6.99997C7.68595 7.5303 7.47532 8.03891 7.10038 8.41397L1.81139 13.707Z" />
+                </svg></a>
+        </div>
+    </div>
+
+    <div class="bread-crumbs banner">
+        <div class="home">
+            <div class="home-icon">
+                <a href="./index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0_203_2186)">
+                            <path
+                                d="M8.892 0.555452C8.64716 0.335076 8.32941 0.213135 8 0.213135C7.67059 0.213135 7.35284 0.335076 7.108 0.555452L0 6.95279V13.8861C0 14.4519 0.224761 14.9945 0.624839 15.3946C1.02492 15.7947 1.56754 16.0195 2.13333 16.0195H13.8667C14.4325 16.0195 14.9751 15.7947 15.3752 15.3946C15.7752 14.9945 16 14.4519 16 13.8861V6.95279L8.892 0.555452ZM10 14.6841H6V11.3335C6 10.803 6.21071 10.2943 6.58579 9.91924C6.96086 9.54417 7.46957 9.33345 8 9.33345C8.53043 9.33345 9.03914 9.54417 9.41421 9.91924C9.78929 10.2943 10 10.803 10 11.3335V14.6841ZM14.6667 13.8841C14.6667 14.0963 14.5824 14.2998 14.4324 14.4498C14.2823 14.5998 14.0788 14.6841 13.8667 14.6841H11.3333V11.3335C11.3333 10.4494 10.9821 9.60155 10.357 8.97643C9.7319 8.35131 8.88406 8.00012 8 8.00012C7.11595 8.00012 6.2681 8.35131 5.64298 8.97643C5.01786 9.60155 4.66667 10.4494 4.66667 11.3335V14.6841H2.13333C1.92116 14.6841 1.71768 14.5998 1.56765 14.4498C1.41762 14.2998 1.33333 14.0963 1.33333 13.8841V7.54612L8 1.54612L14.6667 7.54612V13.8841Z" />
+
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_203_2186">
+                                <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <div class="next-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 6 10" fill="none">
+                    <path
+                        d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                        fill="#677890" />
+                </svg>
+            </div>
+        </div>
+        <div class="bread-crumbs-text">
+            <p>Three Wheeler</p>
+            <div class="next-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 6 10" fill="none">
+                    <path
+                        d="M1.20751 9.47129L0.266846 8.52862L3.79284 4.99996L0.266846 1.47129L1.21018 0.528625L4.7335 4.05729C4.98347 4.30733 5.12389 4.64641 5.12389 4.99996C5.12389 5.35351 4.98347 5.69259 4.7335 5.94262L1.20751 9.47129Z"
+                        fill="#677890" />
+                </svg>
+            </div>
+        </div>
+        <div class="bread-crumbs-main">
+            <p>Drum Brake Assembly</p>
+        </div>
+    </div>
+
+<div class="sub-banner">
+    <div class="sub-banner-text">
+        <div class="sub-banner-text-sub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                <g id="Group">
+                    <path id="Vector"
+                        d="M2.5 18.6875C2.5 19.0356 2.63828 19.3694 2.88442 19.6156C3.13056 19.8617 3.4644 20 3.8125 20C4.1606 20 4.49444 19.8617 4.74058 19.6156C4.98672 19.3694 5.125 19.0356 5.125 18.6875C5.125 18.3394 4.98672 18.0056 4.74058 17.7594C4.49444 17.5133 4.1606 17.375 3.8125 17.375C3.4644 17.375 3.13056 17.5133 2.88442 17.7594C2.63828 18.0056 2.5 18.3394 2.5 18.6875Z"
+                        fill="#8695AA" />
+                    <path id="Vector_2"
+                        d="M18.32 0.75C19.3263 0.75 20.2275 1.3975 20.5425 2.35125C20.5687 2.42125 20.5163 2.5 20.4375 2.5H18.558L20.5932 8.625H20.6002L20.8925 9.5H20.8837L20.9275 9.62862C20.9294 9.63529 20.9312 9.642 20.9327 9.64875L21.1462 10.2875C21.4464 11.1874 21.4651 12.1575 21.1996 13.0682C21.526 13.196 21.7588 13.5145 21.7588 13.8837V14.337C22.6947 14.4431 23.5617 14.8812 24.2022 15.5719C24.8428 16.2625 25.2145 17.1599 25.25 18.1012C25.25 18.18 25.1887 18.25 25.1012 18.25H24.3444C24.3995 18.6484 24.3757 19.0538 24.2741 19.4431C24.1726 19.8323 23.9954 20.1977 23.7527 20.5184C23.51 20.8392 23.2064 21.1089 22.8594 21.3124C22.5124 21.5158 22.1288 21.6489 21.7303 21.7041C21.3319 21.7592 20.9265 21.7354 20.5373 21.6338C20.148 21.5323 19.7826 21.3551 19.4619 21.1124C19.1412 20.8697 18.8714 20.5661 18.6679 20.2191C18.4645 19.8721 18.3314 19.4884 18.2762 19.09L18.2587 19.125H6.85312C6.78417 19.6041 6.60269 20.06 6.32355 20.4553C6.04441 20.8507 5.67556 21.1743 5.24722 21.3997C4.81888 21.625 4.34325 21.7456 3.85929 21.7517C3.37534 21.7577 2.89684 21.649 2.463 21.4345C2.02916 21.2199 1.65233 20.9056 1.3634 20.5173C1.07446 20.1291 0.881641 19.6778 0.800732 19.2007C0.719824 18.7235 0.753132 18.2339 0.897926 17.7721C1.04272 17.3103 1.29489 16.8893 1.63375 16.5437V15.625C2.115 15.625 2.50875 15.2312 2.50875 14.75V13.2712C2.50875 13.1225 2.38625 13 2.2375 13H1.625V12.125H1.6285V5.06375C1.61975 2.68375 3.5675 0.75 5.9475 0.75H18.32ZM17.6358 2.5H17.375V6.58625C17.375 7.715 18.285 8.625 19.4137 8.625H19.6719L17.6358 2.5ZM6.0175 2.5V12.125H7.3475C8.05625 12.125 8.63375 12.7025 8.63375 13.4112V16.5H10.3837V2.5H6.0175ZM15.6425 2.5H11.2587V12.125H12.5975C13.3063 12.125 13.8837 12.7025 13.8837 13.4112V16.5H15.6337V9.5H15.6425V2.5ZM23.5 18.6875C23.5 18.5379 23.4851 18.3918 23.4562 18.25H22.5506C22.6202 18.4479 22.6414 18.6596 22.6123 18.8674C22.5833 19.0752 22.5048 19.273 22.3836 19.4442C22.2623 19.6154 22.1018 19.755 21.9154 19.8514C21.729 19.9478 21.5223 19.998 21.3125 19.998C21.1027 19.998 20.896 19.9478 20.7096 19.8514C20.5232 19.755 20.3627 19.6154 20.2414 19.4442C20.1202 19.273 20.0417 19.0752 20.0127 18.8674C19.9836 18.6596 20.0048 18.4479 20.0744 18.25H19.1688C19.1079 18.5495 19.1106 18.8584 19.1764 19.1569C19.2423 19.4553 19.37 19.7366 19.5513 19.9827C19.7325 20.2288 19.9634 20.4341 20.2288 20.5855C20.4943 20.7369 20.7886 20.831 21.0927 20.8617C21.3967 20.8924 21.7039 20.8591 21.9943 20.7638C22.2847 20.6686 22.5519 20.5135 22.7787 20.3087C23.0055 20.1039 23.1869 19.8538 23.3111 19.5745C23.4353 19.2953 23.4997 18.9931 23.5 18.6875ZM20.8837 15.6425V13.0087H19.5625C18.8362 13.0087 18.2413 13.595 18.2413 14.33C18.25 15.0475 18.8362 15.6425 19.5625 15.6425H20.8837ZM3.82125 20.875C4.40141 20.875 4.95781 20.6445 5.36805 20.2343C5.77828 19.8241 6.00875 19.2677 6.00875 18.6875C6.00875 18.1073 5.77828 17.5509 5.36805 17.1407C4.95781 16.7305 4.40141 16.5 3.82125 16.5C3.24109 16.5 2.68469 16.7305 2.27445 17.1407C1.86422 17.5509 1.63375 18.1073 1.63375 18.6875C1.63375 19.2677 1.86422 19.8241 2.27445 20.2343C2.68469 20.6445 3.24109 20.875 3.82125 20.875Z"
+                        fill="#8695AA" />
+                </g>
+            </svg>
+            <p>Three Wheeler</p>
+        </div>
+        <div class="sub-banner-text-main">
+            <p>drum brake</p>
+            <span>The steering column is the part of the vehicle that connects the steering wheel to the steering mechanism, which
+            ultimately controls the direction of the wheels.</span>
+        </div>
+    </div>
+    <img src="./public/sub-banner.jfif" alt="">
+</div>
+
+    <div class="ellipse-shape">
+        <div class="ellipse"></div>
+    </div>
+
+    <div class="sub-banner-wrapper">
+        <div class="wrapper">
+            <div class="marquee">
+                <p class="new-line">
+                    India’s
+                </p>
+                <p style="color: red;">No.1</p>
+                <p>Manufacturer of Blackened and Super Finished 2W Cone Set</p>
+                <p class="new-line">
+                    India’s
+                </p>
+                <p style="color: red;"> 1st </p>
+                <p>Manufacturer of Wheel Hub Unit</p>
+                <p class="new-line">
+                    India’s
+                </p>
+                <p style="color: red;">No.1</p>
+                <p>Manufacturer of Blackened and Super Finished 2W Cone Set</p>
+                <p class="new-line">
+                    India’s
+                </p>
+                <p style="color: red;">1st</p>
+                <p>Manufacturer of Wheel Hub Unit</p>
+                <p class="new-line">
+                    India’s
+                </p>
+                <p style="color: red;">No.1</p>
+                <p>Manufacturer of Blackened and Super Finished 2W Cone Set</p>
+                <p class="new-line">
+                    India’s
+                </p>
+                <p style="color: red;">1st</p>
+                <p>Manufacturer of Wheel Hub Unit</p>
+                <p class="new-line">
+                    India’s
+                </p>
+                <p style="color: red;">No.1</p>
+                <p>Manufacturer of Blackened and Super Finished 2W Cone Set</p>
+                <p class="new-line">
+                    India’s
+                </p>
+                <p style="color: red;">1st</p>
+                <p>Manufacturer of Wheel Hub Unit</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-img">
+        <div class="sub-img-container">
+            <div class="sub-img-background"></div>
+            <img src="./public/sub-img.png" alt="">
+            <p>Steering column bearings are required to keep the steering wheel smooth in automobiles. Made of durable
+                materials like
+                bearing steel, it reduces friction and makes it easier to turn the steering wheel. ISK steering column
+                bearings are
+                super finished at the tracks to reduce the friction. These bearings contribute to a more responsive and
+                quieter ride;
+                the conesets are induction hardened at tracks ensuring excellent alignment and durability.
+            </p>
+        </div>
+    </div>
+
+    <div class="sub-advantages">
+        <div class="heading">
+            <p>Advantages of Steering Column Bearings</p>
+        </div>
+        <div class="sub-advantages-container">
+            <div class="sub-advantages-img">
+                <img src="./public/sub-advantages-1.jfif" alt="">
+                <p>Original Part</p>
+            </div>
+            <div class="sub-advantages-points">
+                <div class="rows">
+                    <div class="row-points">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
+                            <g id="01 align center">
+                                <path id="Vector"
+                                    d="M0.941333 15.9999L0 15.0586L6.58733 8.47123C6.71231 8.34621 6.78252 8.17667 6.78252 7.9999C6.78252 7.82312 6.71231 7.65358 6.58733 7.52856L0.0113335 0.953897L0.954 0.0112305L7.52867 6.5859C7.90361 6.96095 8.11424 7.46957 8.11424 7.9999C8.11424 8.53023 7.90361 9.03884 7.52867 9.4139L0.941333 15.9999Z"
+                                    fill="#ED1C24" />
+                            </g>
+                        </svg>
+                        <p>Different method of machining leads to no cases of out drums</p>
+                    </div>
+                    <div class="row-points">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
+                            <g id="01 align center">
+                                <path id="Vector"
+                                    d="M0.941333 15.9999L0 15.0586L6.58733 8.47123C6.71231 8.34621 6.78252 8.17667 6.78252 7.9999C6.78252 7.82312 6.71231 7.65358 6.58733 7.52856L0.0113335 0.953897L0.954 0.0112305L7.52867 6.5859C7.90361 6.96095 8.11424 7.46957 8.11424 7.9999C8.11424 8.53023 7.90361 9.03884 7.52867 9.4139L0.941333 15.9999Z"
+                                    fill="#ED1C24" />
+                            </g>
+                        </svg>
+                        <p>Holes done through VMC to avoid any casing of mismatch in PCD</p>
+                    </div>
+                </div>
+                <div class="rows">
+                    <div class="row-points">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
+                            <g id="01 align center">
+                                <path id="Vector"
+                                    d="M0.941333 15.9999L0 15.0586L6.58733 8.47123C6.71231 8.34621 6.78252 8.17667 6.78252 7.9999C6.78252 7.82312 6.71231 7.65358 6.58733 7.52856L0.0113335 0.953897L0.954 0.0112305L7.52867 6.5859C7.90361 6.96095 8.11424 7.46957 8.11424 7.9999C8.11424 8.53023 7.90361 9.03884 7.52867 9.4139L0.941333 15.9999Z"
+                                    fill="#ED1C24" />
+                            </g>
+                        </svg>
+                        <p>Weight of the drum is heavier compared to other drums to maintain its strength</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="products-list-container">
+            <div class="products-container">
+                <div class="products-list">
+                    <div class="product-info">
+                        <div class="product-info-details">
+                            <img src="./public/sub-img.png" alt="">
+                            <div class="product-info-text">
+                                <div class="product-info-heading">
+                                    <p class="heading">ISK-041</p>
+                                    <p>brake drum</p>
+                                </div>
+                                <div class="product-info-label">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <rect width="24" height="24" rx="12" fill="#FFC5C7" fill-opacity="0.5" />
+                                        <path
+                                            d="M12 20C7.58172 20 4 16.4182 4 12C4 7.58172 7.58172 4 12 4C16.4182 4 20 7.58172 20 12C20 16.4182 16.4182 20 12 20ZM11.2021 15.2L16.859 9.54314L15.7276 8.41178L11.2021 12.9373L8.93937 10.6745L7.80799 11.8059L11.2021 15.2Z"
+                                            fill="#ED1C24" />
+                                    </svg>
+                                    <p>bajaj compact & rE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ellipse-shape-down">
+        <div class="ellipse"></div>
+    </div>
+
+
+    <div class="testimony">
+        <div class="testimony-heading">
+            <div class="benefits-heading">
+                <div class="benefits-heading-main">
+                    <p>Why They Chose Us</p>
+                </div>
+                <div class="benefits-heading-sub">
+                    <p>Testimony</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimony-container">
+            <div class="testimony-divs">
+                <div class="testimony-sets">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristi.
+                    </p>
+                    <div class="testimony-writer">
+                        <p class="heading">Name Surname</p>
+                        <p>Position, Company name</p>
+                    </div>
+                </div>
+                <div class="testimony-sets">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristi.
+                    </p>
+                    <div class="testimony-writer">
+                        <p class="heading">Name Surname</p>
+                        <p>Position, Company name</p>
+                    </div>
+                </div>
+                <div class="testimony-sets">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristi.
+                    </p>
+                    <div class="testimony-writer">
+                        <p class="heading">Name Surname</p>
+                        <p>Position, Company name</p>
+                    </div>
+                </div>
+                <div class="testimony-sets">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristi.
+                    </p>
+                    <div class="testimony-writer">
+                        <p class="heading">Name Surname</p>
+                        <p>Position, Company name</p>
+                    </div>
+                </div>
+                <div class="testimony-sets">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristi.
+                    </p>
+                    <div class="testimony-writer">
+                        <p class="heading">Name Surname</p>
+                        <p>Position, Company name</p>
+                    </div>
+                </div>
+                <div class="testimony-sets">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristi.
+                    </p>
+                    <div class="testimony-writer">
+                        <p class="heading">Name Surname</p>
+                        <p>Position, Company name</p>
+                    </div>
+                </div>
+                <div class="testimony-sets">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristi.
+                    </p>
+                    <div class="testimony-writer">
+                        <p class="heading">Name Surname</p>
+                        <p>Position, Company name</p>
+                    </div>
+                </div>
+                <div class="testimony-sets">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                        elementum
+                        tristi.
+                    </p>
+                    <div class="testimony-writer">
+                        <p class="heading">Name Surname</p>
+                        <p>Position, Company name</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="testimony-selectors">
+                <div class="dots active-dots" onclick="showTestimonies(0)"></div>
+                <div class="dots" onclick="showTestimonies(1)"></div>
+                <div class="dots" onclick="showTestimonies(2)"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="more-details">
+        <div class="more-details-heading">
+            <div class="benefits-heading">
+                <div class="benefits-heading-main">
+                    <p>Brochures</p>
+                </div>
+                <div class="benefits-heading-sub">
+                    <p>Looking for More Details?</p>
+                </div>
+            </div>
+        </div>
+        <div class="more-details-container">
+            <div class="more-details-card">
+                <img src="./public/more-details-1.jfif" alt="">
+                <p>Two Wheeler Part</p>
+                <a href="#">Download Now</a>
+            </div>
+            <div class="more-details-card">
+                <img src="./public/more-details-1.jfif" alt="">
+                <p>Two Wheeler Part</p>
+                <a href="#">Download Now</a>
+            </div>
+            <div class="more-details-card">
+                <img src="./public/more-details-1.jfif" alt="">
+                <p>Two Wheeler Part</p>
+                <a href="#">Download Now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-ISK">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81" fill="none">
+                    <g clip-path="url(#clip0_130_1081)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M40.0022 0.361328C62.0924 0.361328 80.0043 18.2689 80.0043 40.3635C80.0043 47.9914 77.8656 55.119 74.1616 61.186H5.84272C2.13874 55.119 0 47.9914 0 40.3635C0 18.2733 17.9076 0.361328 40.0022 0.361328ZM73.3423 62.471C73.0534 62.9065 72.7559 63.3334 72.4497 63.7602H7.55889C7.25274 63.3377 6.95521 62.9065 6.66631 62.471H73.3423ZM71.4839 65.0452C64.1621 74.372 52.7828 80.3613 40.0065 80.3613C27.2301 80.3613 15.8508 74.372 8.52908 65.0452H71.4882H71.4839Z"
+                            fill="#E31E24" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M33.5389 17.1479C49.739 17.1479 62.8733 30.2822 62.8733 46.4823C62.8733 62.6824 49.739 75.8166 33.5389 75.8166C17.3389 75.8166 4.20459 62.6824 4.20459 46.4823C4.20459 30.2822 17.3389 17.1479 33.5389 17.1479Z"
+                            fill="#FEFEFE" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.95207 58.3101L13.7078 34.6503H18.8347L15.0876 58.3101H9.94775H9.95207ZM24.8241 58.6938C22.5603 58.6938 19.9602 58.2454 17.9637 57.107L17.1919 56.6672L19.0676 52.2173L20.068 52.877C20.4302 53.1185 21.2192 53.3772 21.6332 53.5022C22.6379 53.8041 23.7073 53.9895 24.7551 53.9895C25.9624 53.9895 27.7821 53.817 28.5323 52.7088C28.8385 52.2561 28.9334 51.7084 28.9334 51.1694C28.9334 50.1259 28.2003 49.5481 27.3293 49.104C26.8119 48.8367 26.2599 48.6124 25.7253 48.3796C25.0741 48.0993 24.4274 47.8147 23.8064 47.4784C21.5426 46.2581 20.0421 44.5463 20.0421 41.834C20.0421 40.3636 20.4302 38.9536 21.2753 37.742C23.0432 35.1979 26.2211 34.2622 29.1878 34.2622C30.9643 34.2622 33.034 34.5856 34.7114 35.1505L35.5177 35.4221L34.7416 40.1394L33.6032 39.7168C32.176 39.1822 30.5417 38.8501 29.0153 38.8501C27.9632 38.8501 26.6954 39.0356 25.8848 39.7729C25.432 40.1869 25.1604 40.756 25.1604 41.3726C25.1604 41.5882 25.1949 41.7952 25.2897 41.9936C25.7339 42.9034 27.8123 43.7054 28.6962 44.0763C31.8094 45.4043 34.2673 47.03 34.2673 50.7296C34.2673 52.5493 33.78 54.2913 32.5985 55.7013C30.7056 57.9651 27.6484 58.6895 24.8197 58.6895L24.8241 58.6938ZM43.0939 41.834L50.4027 34.6503H57.125L45.7371 45.7881C48.6908 48.9186 51.3341 53.0883 53.1278 56.8871L53.8005 58.3101H47.906L47.6258 57.7754C46.2718 55.1839 44.7583 52.7002 42.9214 50.4148C42.6023 50.0095 42.2746 49.6085 41.9383 49.2118L40.4679 58.3101H35.3323L39.0881 34.6503H44.2107L43.0939 41.834Z"
+                            fill="#2B2A29" />
+                        <path
+                            d="M68.6124 26.8711C69.3325 26.8711 70.0267 27.0522 70.6907 27.4144C71.3548 27.7766 71.8765 28.294 72.256 28.9667C72.6354 29.6394 72.8252 30.3465 72.8252 31.0839C72.8252 31.8169 72.6398 32.5155 72.2689 33.1795C71.8938 33.8436 71.3764 34.361 70.7123 34.7361C70.0483 35.107 69.3497 35.2924 68.6167 35.2924C67.8837 35.2924 67.1851 35.107 66.5211 34.7361C65.857 34.361 65.3396 33.8436 64.9645 33.1795C64.5936 32.5155 64.4082 31.8169 64.4082 31.0839C64.4082 30.3465 64.5979 29.6394 64.9774 28.9667C65.3568 28.294 65.8786 27.7766 66.5426 27.4144C67.2067 27.0522 67.8966 26.8711 68.621 26.8711H68.6124ZM68.6167 27.7033C68.0389 27.7033 67.4826 27.8499 66.9523 28.1345C66.4219 28.4234 66.0036 28.8374 65.6975 29.3807C65.3913 29.9197 65.2361 30.4888 65.2361 31.0796C65.2361 31.6703 65.387 32.2309 65.6845 32.7656C65.9821 33.3002 66.4003 33.7185 66.935 34.016C67.4697 34.3179 68.0303 34.4645 68.6167 34.4645C69.2074 34.4645 69.768 34.3136 70.2984 34.016C70.833 33.7142 71.247 33.3002 71.5488 32.7656C71.8507 32.2352 72.0016 31.6703 72.0016 31.0796C72.0016 30.4888 71.8464 29.9197 71.5402 29.3807C71.2341 28.8374 70.8158 28.4234 70.2854 28.1345C69.7507 27.8456 69.1945 27.7033 68.6167 27.7033ZM66.7108 33.3304V28.8762H67.6163C68.4658 28.8762 68.9401 28.8805 69.0436 28.8891C69.3454 28.915 69.5739 28.9753 69.7421 29.0659C69.906 29.1564 70.0483 29.2987 70.1604 29.4928C70.2725 29.6825 70.3285 29.8981 70.3285 30.1309C70.3285 30.4543 70.2251 30.726 70.0138 30.9545C69.8025 31.1831 69.5093 31.3254 69.1298 31.3814C69.2635 31.4332 69.3713 31.4892 69.4446 31.5496C69.5179 31.61 69.6171 31.7221 69.7464 31.8902C69.7809 31.9333 69.8887 32.1144 70.0784 32.4335L70.6002 33.3304H69.4748L69.1039 32.606C68.8538 32.1188 68.6469 31.8126 68.4873 31.6876C68.3235 31.5625 68.1165 31.4978 67.8621 31.4978H67.6292V33.3304H66.7194H66.7108ZM67.6206 30.7864H67.9871C68.5089 30.7864 68.8323 30.7648 68.9573 30.726C69.0824 30.6872 69.1816 30.6182 69.2549 30.519C69.3282 30.4198 69.3627 30.3077 69.3627 30.1784C69.3627 30.0576 69.3282 29.9455 69.2549 29.8507C69.1816 29.7558 69.0824 29.6868 68.9487 29.6437C68.8193 29.6006 68.496 29.5833 67.9828 29.5833H67.6163V30.7864H67.6206Z"
+                            fill="#FEFEFE" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_130_1081">
+                            <rect width="80.0004" height="80" fill="white" transform="translate(0 0.361328)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <p>Empowered by Innovations</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-links-set">
+                    <p>Pages</p>
+                    <div class="footer-links-link">
+                        <a href="#">Home</a>
+                        <a href="#">Link Seven</a>
+                        <a href="#">Link Eight</a>
+                        <a href="#">Link Nine</a>
+                        <a href="#">Link Ten</a>
+                    </div>
+                </div>
+                <div class="footer-links-set">
+                    <p>Pages</p>
+                    <div class="footer-links-link">
+                        <a href="#">Home</a>
+                        <a href="#">Link Seven</a>
+                        <a href="#">Link Eight</a>
+                        <a href="#">Link Nine</a>
+                        <a href="#">Link Ten</a>
+                    </div>
+                </div>
+                <div class="footer-links-set">
+                    <p>Pages</p>
+                    <div class="footer-links-link">
+                        <a href="#">Home</a>
+                        <a href="#">Link Seven</a>
+                        <a href="#">Link Eight</a>
+                        <a href="#">Link Nine</a>
+                        <a href="#">Link Ten</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-details">
+                <div class="news-letter">
+                    <div class="news-letter-content">
+                        <p class="heading">Subscribe to our news letter</p>
+                        <p>Stay updated on our latest product release</p>
+                    </div>
+                    <div class="actions">
+                        <form action="">
+                            <input type="email" placeholder="Email address" required>
+                            <button type="submit">Submit</button>
+                        </form>
+                        <p>By subscribing you agree to with our <a href="#">Privacy Policy</a> </p>
+                    </div>
+                </div>
+                <div class="follow-us">
+                    <p>Follow Us</p>
+                    <div class="follow-us-links">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none">
+                                <g clip-path="url(#clip0_130_1143)">
+                                    <path
+                                        d="M12 0.361328C8.74 0.361328 8.333 0.376328 7.053 0.433328C5.775 0.493328 4.905 0.694328 4.14 0.991328C3.351 1.29733 2.681 1.70833 2.014 2.37533C1.347 3.04233 0.935 3.71133 0.63 4.50133C0.333 5.26633 0.131 6.13633 0.072 7.41433C0.012 8.69433 0 9.10133 0 12.3613C0 15.6213 0.015 16.0283 0.072 17.3083C0.132 18.5853 0.333 19.4563 0.63 20.2213C0.936 21.0093 1.347 21.6803 2.014 22.3473C2.681 23.0133 3.35 23.4263 4.14 23.7313C4.906 24.0273 5.776 24.2303 7.053 24.2893C8.333 24.3493 8.74 24.3613 12 24.3613C15.26 24.3613 15.667 24.3463 16.947 24.2893C18.224 24.2293 19.095 24.0273 19.86 23.7313C20.648 23.4253 21.319 23.0133 21.986 22.3473C22.652 21.6803 23.065 21.0123 23.37 20.2213C23.666 19.4563 23.869 18.5853 23.928 17.3083C23.988 16.0283 24 15.6213 24 12.3613C24 9.10133 23.985 8.69433 23.928 7.41433C23.868 6.13733 23.666 5.26533 23.37 4.50133C23.064 3.71233 22.652 3.04233 21.986 2.37533C21.319 1.70833 20.651 1.29633 19.86 0.991328C19.095 0.694328 18.224 0.492328 16.947 0.433328C15.667 0.373328 15.26 0.361328 12 0.361328ZM12 2.52133C15.203 2.52133 15.585 2.53733 16.85 2.59233C18.02 2.64733 18.655 2.84133 19.077 3.00733C19.639 3.22433 20.037 3.48433 20.459 3.90333C20.878 4.32333 21.138 4.72233 21.355 5.28433C21.519 5.70633 21.715 6.34133 21.768 7.51133C21.825 8.77733 21.838 9.15733 21.838 12.3613C21.838 15.5653 21.823 15.9463 21.764 17.2113C21.703 18.3813 21.508 19.0163 21.343 19.4383C21.119 20.0003 20.864 20.3983 20.444 20.8203C20.025 21.2393 19.62 21.4993 19.064 21.7163C18.644 21.8803 17.999 22.0763 16.829 22.1293C15.555 22.1863 15.18 22.1993 11.97 22.1993C8.759 22.1993 8.384 22.1843 7.111 22.1253C5.94 22.0643 5.295 21.8693 4.875 21.7043C4.306 21.4803 3.915 21.2253 3.496 20.8053C3.075 20.3863 2.806 19.9813 2.596 19.4253C2.431 19.0053 2.237 18.3603 2.176 17.1903C2.131 15.9303 2.115 15.5413 2.115 12.3463C2.115 9.15033 2.131 8.76033 2.176 7.48533C2.237 6.31533 2.431 5.67133 2.596 5.25133C2.806 4.68133 3.075 4.29133 3.496 3.87033C3.915 3.45133 4.306 3.18133 4.875 2.97233C5.295 2.80633 5.926 2.61133 7.096 2.55133C8.371 2.50633 8.746 2.49133 11.955 2.49133L12 2.52133ZM12 6.19933C8.595 6.19933 5.838 8.95933 5.838 12.3613C5.838 15.7663 8.598 18.5233 12 18.5233C15.405 18.5233 18.162 15.7633 18.162 12.3613C18.162 8.95633 15.402 6.19933 12 6.19933ZM12 16.3613C9.79 16.3613 8 14.5713 8 12.3613C8 10.1513 9.79 8.36133 12 8.36133C14.21 8.36133 16 10.1513 16 12.3613C16 14.5713 14.21 16.3613 12 16.3613ZM19.846 5.95633C19.846 6.75133 19.2 7.39633 18.406 7.39633C17.611 7.39633 16.966 6.75033 16.966 5.95633C16.966 5.16233 17.612 4.51733 18.406 4.51733C19.199 4.51633 19.846 5.16233 19.846 5.95633Z"
+                                        fill="#F6F7F9" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_130_1143">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.361328)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+
+
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none">
+                                <g clip-path="url(#clip0_130_1145)">
+                                    <path
+                                        d="M17.4721 14.7434C17.1751 14.5944 15.7141 13.8764 15.4421 13.7764C15.1691 13.6774 14.9711 13.6284 14.7721 13.9264C14.5751 14.2234 14.0051 14.8924 13.8321 15.0904C13.6591 15.2894 13.4851 15.3134 13.1881 15.1654C12.8911 15.0154 11.9331 14.7024 10.7981 13.6904C9.91513 12.9024 9.31813 11.9294 9.14513 11.6314C8.97213 11.3344 9.12713 11.1734 9.27513 11.0254C9.40913 10.8924 9.57313 10.6784 9.72113 10.5054C9.87013 10.3314 9.91913 10.2074 10.0191 10.0084C10.1181 9.81037 10.0691 9.63737 9.99413 9.48837C9.91913 9.33937 9.32513 7.87637 9.07813 7.28137C8.83613 6.70237 8.59113 6.78137 8.40913 6.77137C8.23613 6.76337 8.03813 6.76137 7.83913 6.76137C7.64113 6.76137 7.31913 6.83537 7.04713 7.13337C6.77513 7.43037 6.00713 8.14937 6.00713 9.61237C6.00713 11.0744 7.07213 12.4874 7.22013 12.6864C7.36913 12.8844 9.31613 15.8864 12.2971 17.1734C13.0061 17.4794 13.5591 17.6624 13.9911 17.7984C14.7031 18.0254 15.3511 17.9934 15.8621 17.9164C16.4331 17.8314 17.6201 17.1974 17.8681 16.5034C18.1161 15.8094 18.1161 15.2144 18.0411 15.0904C17.9671 14.9664 17.7701 14.8924 17.4721 14.7434ZM12.0501 22.1464H12.0461C10.2759 22.1465 8.53821 21.6706 7.01513 20.7684L6.65413 20.5544L2.91313 21.5364L3.91113 17.8884L3.67613 17.5144C2.68657 15.9386 2.16307 14.1151 2.16613 12.2544C2.16713 6.80437 6.60213 2.37037 12.0541 2.37037C14.6941 2.37037 17.1761 3.40037 19.0421 5.26837C19.9628 6.18499 20.6926 7.2751 21.1891 8.47561C21.6857 9.67613 21.9393 10.9632 21.9351 12.2624C21.9321 17.7124 17.4981 22.1464 12.0501 22.1464ZM20.4631 3.84937C19.3613 2.74029 18.0504 1.86091 16.6062 1.26217C15.1621 0.663433 13.6135 0.357252 12.0501 0.361369C5.49513 0.361369 0.160129 5.69637 0.157129 12.2534C0.157129 14.3494 0.704129 16.3954 1.74513 18.1984L0.0571289 24.3614L6.36213 22.7074C8.10572 23.6573 10.0596 24.1551 12.0451 24.1554H12.0501C18.6041 24.1554 23.9401 18.8204 23.9431 12.2624C23.948 10.6996 23.6429 9.15147 23.0456 7.7074C22.4482 6.26334 21.5705 4.95204 20.4631 3.84937Z"
+                                        fill="#F6F7F9" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_130_1145">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.361328)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+
+
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                fill="none">
+                                <g clip-path="url(#clip0_130_1147)">
+                                    <path
+                                        d="M20.447 20.8133H16.893V15.2443C16.893 13.9163 16.866 12.2073 15.041 12.2073C13.188 12.2073 12.905 13.6523 12.905 15.1463V20.8133H9.351V9.36133H12.765V10.9223H12.811C13.288 10.0223 14.448 9.07233 16.181 9.07233C19.782 9.07233 20.448 11.4423 20.448 14.5273L20.447 20.8133ZM5.337 7.79433C4.193 7.79433 3.274 6.86833 3.274 5.72933C3.274 4.59133 4.194 3.66633 5.337 3.66633C6.477 3.66633 7.401 4.59133 7.401 5.72933C7.401 6.86833 6.476 7.79433 5.337 7.79433ZM7.119 20.8133H3.555V9.36133H7.119V20.8133ZM22.225 0.361328H1.771C0.792 0.361328 0 1.13533 0 2.09033V22.6323C0 23.5883 0.792 24.3613 1.771 24.3613H22.222C23.2 24.3613 24 23.5883 24 22.6323V2.09033C24 1.13533 23.2 0.361328 22.222 0.361328H22.225Z"
+                                        fill="#F6F7F9" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_130_1147">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.361328)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 30 25"
+                                fill="none">
+                                <g clip-path="url(#clip0_130_1149)">
+                                    <path
+                                        d="M15.3667 0.361328C16.1679 0.365738 18.1725 0.38512 20.3023 0.470429L21.0574 0.503356C23.2018 0.604882 25.3444 0.778322 26.407 1.07462C27.8245 1.47282 28.9386 2.63471 29.3151 4.10752C29.9147 6.44629 29.9897 11.011 29.999 12.1157L30.0003 12.3446V12.3607C30.0003 12.3607 30.0003 12.3662 30.0003 12.3769L29.999 12.6058C29.9897 13.7104 29.9147 18.2752 29.3151 20.614C28.9333 22.0921 27.8192 23.2541 26.407 23.6468C25.3444 23.9431 23.2018 24.1165 21.0574 24.2181L20.3023 24.2509C18.1725 24.3363 16.1679 24.3556 15.3667 24.3601L15.0151 24.3613H14.9995C14.9995 24.3613 14.9942 24.3613 14.9839 24.3613L14.6326 24.3601C12.9369 24.3508 5.84691 24.2742 3.59197 23.6468C2.17452 23.2486 1.06044 22.0868 0.683843 20.614C0.0843046 18.2752 0.00936053 13.7104 0 12.6058V12.1157C0.00936053 11.011 0.0843046 6.44629 0.683843 4.10752C1.06566 2.62925 2.17974 1.46737 3.59197 1.07462C5.84691 0.447178 12.9369 0.370659 14.6326 0.361328H15.3667ZM11.9993 7.11042V17.6109L20.9998 12.3607L11.9993 7.11042Z"
+                                        fill="#F6F7F9" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_130_1149">
+                                        <rect width="30" height="24" fill="white" transform="translate(0 0.361328)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <span></span>
+            <div class="footer-credits">
+                <p>© 2024 ISK. All rights reserved.</p>
+                <p>Crafted by Koios Engineering Solutions</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var logo = document.querySelector(".logo");
+            var banner = document.querySelector(".banner");
+            logo.addEventListener("click", function () {
+                banner.scrollIntoView({ behavior: "smooth" });
+            });
+        });
+        document.getElementById("threeWheeler").onclick = threewheeler;
+
+        function threewheeler() {
+            document.getElementById("threeWheeler").classList.add("options");
+            document.getElementById("twoWheeler").classList.remove("options");
+            document.getElementById("two-wheel-content").style.display = "none";
+            document.getElementById("three-wheel-content").style.display = "block";
+        }
+
+        document.getElementById("twoWheeler").onclick = twowheeler;
+
+        function twowheeler() {
+            document.getElementById("threeWheeler").classList.remove("options");
+            document.getElementById("twoWheeler").classList.add("options");
+            document.getElementById("two-wheel-content").style.display = "block";
+            document.getElementById("three-wheel-content").style.display = "none";
+        }
+
+
+
+
+
+        function toggleHiddenProducts() {
+            var hiddenProducts = document.querySelectorAll('.hidden-products');
+            hiddenProducts.forEach(function (product) {
+                product.style.display = 'flex';
+            });
+
+            // Hide all load more buttons
+            var loadMoreButtons = document.querySelectorAll('.load-more');
+            loadMoreButtons.forEach(function (button) {
+                button.style.display = 'none';
+            });
+        }
+
+        function hideHiddenProducts() {
+            var loadMoreButtons = document.querySelectorAll('.load-more');
+            loadMoreButtons.forEach(function (button) {
+                button.style.display = 'flex';
+            });
+            var hiddenProducts = document.querySelectorAll('.hidden-products');
+            hiddenProducts.forEach(function (product) {
+                // Set the display property of each product to "block"
+                product.style.display = 'none';
+            });
+        }
+
+        const testimonyDivs = document.querySelector(".testimony-divs");
+        const dots = document.querySelectorAll(".dots");
+
+        let currentSlideIndex = 0; // Your existing currentIndex declaration
+        let testimoniesIntervalId; // Your existing intervalId declaration
+
+        function showTestimonies(index) {
+            const translateValue = -index * 100; // Move 100% for each set
+            testimonyDivs.style.transform = `translateX(${translateValue}%)`;
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("active-dots", i === index);
+            });
+        }
+
+        function startAutoToggle() {
+            testimoniesIntervalId = setInterval(() => {
+                currentSlideIndex = (currentSlideIndex + 1) % dots.length;
+                showTestimonies(currentSlideIndex);
+            }, 4500);
+        }
+
+        startAutoToggle();
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener("click", () => {
+                clearInterval(testimoniesIntervalId);
+                currentSlideIndex = i;
+                showTestimonies(currentSlideIndex);
+                startAutoToggle();
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
